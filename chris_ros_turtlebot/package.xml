@@ -1,4 +1,4 @@
-<package>
+<package format="2">
   <name>chris_ros_turtlebot</name>
   <version>0.2.0</version>
   <description>
@@ -13,8 +13,11 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>chris_turtlebot_bringup</run_depend>
-  <run_depend>chris_turtlebot_model</run_depend>
+  <exec_depend>chris_turtlebot_bringup</exec_depend>
+  <exec_depend>chris_turtlebot_model</exec_depend>
+
+  <!-- dependencies not defined in kobuki/ecl packages /-->
+  <depend>ecl-geometry</depend>
 
   <export>
     <metapackage/>
