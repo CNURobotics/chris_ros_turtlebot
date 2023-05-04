@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="cnu_turtlebot" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:arg name="nsp"   default="tb0" />
-  
+
   <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot_common_library.urdf.xacro" />
   <xacro:include filename="$(find chris_turtlebot_model)/urdf/kobuki.urdf.xacro" />
   <xacro:include filename="$(find turtlebot_description)/urdf/stacks/hexagons.urdf.xacro"/>
@@ -9,10 +9,10 @@
 
   <xacro:include filename="$(find chris_turtlebot_model)/urdf/hokuyo_urg04.urdf.xacro"/>
 
-  <kobuki/>
+  <xacro:kobuki/>
 
-  <stack_hexagons parent="base_footprint"/>
-  <sensor_kinect  parent="base_footprint"/>
+  <xacro:stack_hexagons parent="base_footprint"/>
+  <xacro:sensor_kinect  parent="base_footprint"/>
 
   <joint name="hokuyo_base_joint" type="fixed">
     <axis xyz="0 0 1" />
