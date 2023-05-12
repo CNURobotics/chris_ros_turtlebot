@@ -25,6 +25,10 @@ The files are designed to permit multiple instances of the robots in simulation 
 
 The custom Gazebo plugin publishes ground truth pose for the base_footprint link that can be used with fake localization.
 
+> NOTE: The turtlebot_description depends on a defunct create_description package.  Just ignore this error for Noetic.
+> The create_description package is not needed by our Turtlebot with Kobuki base.
+
+
 ### chris_turtlebot_dashboard
 
 This package contains a customized version of the kobuki_dashboard.  This version permits diagnostic messsages from within a particular robot's name space, and also handles stale messages for the battery indicators, as well as updated PyQt5 bindings
